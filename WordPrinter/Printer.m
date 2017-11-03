@@ -13,8 +13,12 @@
 -(void)printWord:(NSString*)word {
     
     int timesPrint = [self.delegate printer:self numberOfTimesToPrint:word];
+        
     // write a loop and print the word that number of times.
     
+    for(int i = 0; i < timesPrint; i++) {
+        NSLog(@"%@", word);
+    }
 }
 
 @end

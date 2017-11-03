@@ -20,5 +20,6 @@
 @interface Printer : NSObject
 
 @property (nonatomic, weak) id <PrinterDelegate> delegate;
+-(void)printWord:(NSString*)word;
 
 @end
